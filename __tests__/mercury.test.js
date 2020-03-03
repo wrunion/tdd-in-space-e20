@@ -13,4 +13,9 @@ describe('Mercury', () => {
     expect(mercury.earthYearPercentage).toEqual(.24);
   });
 
+  test(`Should have a calculateAge function`, () => {
+    let mercury = new Mercury('Mercury');
+    expect(mercury.earthYearPercentage()).toBeTruthy();
+  });
+
 });
