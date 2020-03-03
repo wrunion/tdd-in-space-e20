@@ -23,4 +23,8 @@ describe('Mercury', () => {
     expect(mercury.calculateAge(10)).toEqual(10);
   });
 
+  test(`Should have a calculateAge method that correctly calculates the 'Mercury Years' of a person, based on their 'Earth Years' age`, () => {
+    expect(mercury.calculateAge(10)).toEqual(41.67);
+  });
+
 });
