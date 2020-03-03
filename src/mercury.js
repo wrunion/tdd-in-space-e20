@@ -4,7 +4,7 @@ export class Mercury {
     this.earthYearPercentage = .24;
   }
   calculateAge(earthYears) {
-    let mercuryYears = earthYears / .24;
+    let mercuryYears = earthYears / this.earthYearPercentage;
     return parseFloat(mercuryYears.toFixed(2));
   }
   lifeExpectancy(earthYears) {
