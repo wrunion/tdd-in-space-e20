@@ -3,7 +3,8 @@ export class Mercury {
     this.name = name;
     this.earthYearPercentage = .24;
   }
-  calculateAge(earthAge) {
-    return earthAge;
+  calculateAge(earthYears) {
+    let mercuryYears = earthYears / .24;
+    return parseFloat(mercuryYears.toFixed(2));
   }
 }
