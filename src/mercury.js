@@ -3,7 +3,7 @@ export class Mercury {
     this.name = name;
     this.earthYearPercentage = .24;
   }
-  calculateAge() {
-    return true;
+  calculateAge(earthAge) {
+    return earthAge;
   }
 }

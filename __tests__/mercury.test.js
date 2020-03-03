@@ -9,13 +9,13 @@ describe('Mercury', () => {
   });
 
   test(`Should have "earthYearPercentage" property that returns .24`, () => {
-    let mercury = new Mercury('Mercury', .24);
+    let mercury = new Mercury('Mercury');
     expect(mercury.earthYearPercentage).toEqual(.24);
   });
 
   test(`Should have a calculateAge method`, () => {
     let mercury = new Mercury('Mercury');
-    expect(mercury.calculateAge()).toBeTruthy();
+    expect(mercury.calculateAge(10)).toBeTruthy();
   });
 
   test(`calculateAge method take in an argument, and return it unchanged`, () => {
