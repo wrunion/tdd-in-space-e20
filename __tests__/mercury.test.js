@@ -23,4 +23,8 @@ describe('Mercury', () => {
     expect(mercury.calculateAge(10)).toEqual(41.67);
   });
 
+  test(`Should have a lifeExpectancy function that takes in a user's earth year life expectancy, and returns it back to them`, () => {
+    expect(mercury.lifeExpectancy(10)).toEqual(10);
+  });
+
 });
