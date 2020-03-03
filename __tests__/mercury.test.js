@@ -8,8 +8,8 @@ describe('Mercury', () => {
     mercury = new Mercury('Mercury');
   });
  
-  test(`Should correctly create a Mercury class with a constructor function and name property`, () => {
-    expect(mercury.name).toEqual('Mercury');
+  test(`Should correctly create a Mercury class with a constructor function and planetName property`, () => {
+    expect(mercury.planetName).toEqual('Mercury');
   });
 
   test(`Should have "earthYearPercentage" property that returns .24`, () => {    expect(mercury.earthYearPercentage).toEqual(.24);
@@ -27,4 +27,14 @@ describe('Mercury', () => {
     expect(mercury.lifeExpectancy(10, 85)).toBeCloseTo(312.5);
   });
 
+  // test(`If user's life expectancy is less than 5 years on Mercury, a special message should be displayed`, () => {
+  //   expect(mercury.lifeExpectancy(80, 85)).toEqual(`Time's almost up! You have ${mercuryLifeExpectancy} years left on Mercury!`); 
+  // });
+  // test(`If a user's life expectancy is greater than their age on Mercury, return a special message`, () => {
+  //   expect(mercury.lifeExpectancy(90, 85)).toBeCloseTo()
+  // });
+  test(`If a user's life expectancy is greater than their age on Mercury, return their Mercy life expectancy as a positive number`, () => {
+    expect(mercury.lifeExpectancy(90, 85)).toBeCloseTo(20.83);
+  });
+ 
 });
