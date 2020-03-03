@@ -1,7 +1,7 @@
 /* eslint-disable no-console */
 export class Mercury {
-  constructor(name) {
-    this.name = name;
+  constructor(planetName) {
+    this.planetName = planetName;
     this.earthYearPercentage = .24;
   }
   calculateAge(earthYears) {
@@ -11,7 +11,12 @@ export class Mercury {
 
   lifeExpectancy(earthAge, earthLifeExpectancy) {
     let mercuryLifeExpectancy = (earthLifeExpectancy - earthAge) / this.earthYearPercentage;
-    // console.log(`Your Mercury life expectancy is ${mercuryLifeExpectancy}!`);
+    if (mercuryLifeExpectancy <= 5) {
+      return `Time's almost up! You have ${mercuryLifeExpectancy} years left on ${this.planetName}`;
+    } else if (mercuryLifeExpectancy < 0) {
+      return `Congrats! You've already beat father time! You've lived ${mercuryLifeExpectancy} extra years left on ${this.planetName}!`;
+    }
+
     return mercuryLifeExpectancy;
   }
 }
