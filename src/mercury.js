@@ -7,4 +7,7 @@ export class Mercury {
     let mercuryYears = earthYears / .24;
     return parseFloat(mercuryYears.toFixed(2));
   }
+  lifeExpectancy(earthYears) {
+    return earthYears;
+  }
 }
