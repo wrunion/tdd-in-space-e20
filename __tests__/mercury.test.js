@@ -27,4 +27,8 @@ describe('Mercury', () => {
     expect(mercury.lifeExpectancy(10)).toEqual(10);
   });
 
+  test(`Should have a lifeExpectancy function that takes a user's age and earth life expectancy, and returns their Mercury life expectancy back to them.`, () => {
+    expect(mercury.lifeExpectancy(10, 85)).toBeCloseTo(312.5);
+  });
+
 });
