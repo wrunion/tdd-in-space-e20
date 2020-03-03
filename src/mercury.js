@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 export class Mercury {
   constructor(name) {
     this.name = name;
@@ -7,7 +8,10 @@ export class Mercury {
     let mercuryYears = earthYears / this.earthYearPercentage;
     return parseFloat(mercuryYears.toFixed(2));
   }
-  lifeExpectancy(earthYears) {
-    return earthYears;
+
+  lifeExpectancy(earthAge, earthLifeExpectancy) {
+    let mercuryLifeExpectancy = (earthLifeExpectancy - earthAge) / this.earthYearPercentage;
+    // console.log(`Your Mercury life expectancy is ${mercuryLifeExpectancy}!`);
+    return mercuryLifeExpectancy;
   }
 }
