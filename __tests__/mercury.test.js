@@ -8,4 +8,9 @@ describe('Mercury', () => {
     expect(mercury.name).toEqual('Mercury');
   });
 
+  test(`Should have "earthYearPercentage" property that returns .24`, () => {
+    let mercury = new Mercury('Mercury', .24);
+    expect(mercury.earthYearPercentage).toEqual(.24);
+  });
+
 });
