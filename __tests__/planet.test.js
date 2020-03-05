@@ -8,8 +8,10 @@ describe('Planet', () => {
     expect(planet.planetName).toEqual('Mercury');
   });
 
-  // test(`Should have "earthYearPercentage" property that returns .24`, () => {    expect(mercury.earthYearPercentage).toEqual(.24);
-  // });
+  test(`Should have "earthYearPercentage" property that returns that planet's percentage of years compared to earth years`, () => {    
+    let planet = new Planet('Mercury', .24);
+    expect(planet.earthYearPercentage).toEqual(.24);
+  });
 
   // test(`Should have a calculateAge method`, () => {
   //   expect(mercury.calculateAge(10)).toBeTruthy();
