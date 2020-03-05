@@ -13,13 +13,10 @@ describe('Planet', () => {
     expect(planet.earthYearPercentage).toEqual(.24);
   });
 
-  // test(`Should have a calculateAge method`, () => {
-  //   expect(mercury.calculateAge(10)).toBeTruthy();
-  // });
-
-  // test(`Should have a calculateAge method that correctly calculates the 'Mercury Years' of a person, based on their 'Earth Years' age`, () => {
-  //   expect(mercury.calculateAge(10)).toEqual(41.67);
-  // });
+  test(`Should have a calculateAge method that correctly calculates the 'Planet Years' of a person, based on their 'Earth Years' age`, () => {
+    let planet = new Planet('Mercury', .24, 10);
+    expect(planet.calculateAge()).toEqual(41.67);
+  });
 
   // test(`Should have a lifeExpectancy function that takes a user's age and earth life expectancy, and returns their Mercury life expectancy back to them.`, () => {
   //   expect(mercury.lifeExpectancy(10, 85)).toBeCloseTo(312.5);
