@@ -1,4 +1,3 @@
-/* eslint-disable no-console */
 export class Planet {
   constructor(planetName, earthYearPercentage, userAge, userLifeExpectancy) {
     this.planetName = planetName;
@@ -13,15 +12,13 @@ export class Planet {
   }
 
   lifeExpectancy() {
-    let planetLifeExpectancy = (this.planetYears - this.userAge) / this.earthYearPercentage;
-    // if (mercuryLifeExpectancy <= 5) {
-    //   return `Time's almost up! You have ${mercuryLifeExpectancy} years left on ${this.planetName}`;
-    // }  
+    let planetLifeExpectancy = (this.userLifeExpectancy - this.userAge) / this.earthYearPercentage;
+
+    planetLifeExpectancy = parseFloat(planetLifeExpectancy.toFixed(2));
+
     if (planetLifeExpectancy < 0) {
-      return Math.abs(planetLifeExpectancy);
+      return `Congrats! You beat father time! You've lived ${Math.abs(planetLifeExpectancy)} extra years left on ${this.planetName}!`;
     }
-    //   return `Congrats! You beat father time! You've lived ${Math.abs(mercuryLifeExpectancy)} extra years left on ${this.planetName}!`;
-    // }
     return planetLifeExpectancy;
   }
 }
