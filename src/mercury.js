@@ -1,3 +1,5 @@
+/* This has been refactored to be scalable; check out planet.js for the final product! */
+
 export class Mercury {
   constructor(planetName) {
     this.planetName = planetName;
