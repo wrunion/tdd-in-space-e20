@@ -14,7 +14,6 @@ module.exports = {
   devServer: {
     contentBase: './dist'
   },
-  setupFilesAfterEnv: ['./jest.setup.js'],
   plugins: [
     new UglifyJsPlugin({ sourceMap: true }),
     new CleanWebpackPlugin(),
@@ -36,9 +35,9 @@ module.exports = {
       {
         test: /\.js$/,
         exclude: [
-            /node_modules/,
-            /spec/
-          ],
+          /node_modules/,
+          /spec/
+        ],
         loader: "eslint-loader"
       }
     ]
