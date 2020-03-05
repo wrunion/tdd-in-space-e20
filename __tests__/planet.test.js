@@ -18,13 +18,11 @@ describe('Planet', () => {
     expect(planet.calculateAge()).toEqual(41.67);
   });
 
-  // test(`Should have a lifeExpectancy function that takes a user's age and earth life expectancy, and returns their Mercury life expectancy back to them.`, () => {
-  //   expect(mercury.lifeExpectancy(10, 85)).toBeCloseTo(312.5);
-  // });
+  test(`Should have a lifeExpectancy function that takes a user's age and earth life expectancy, and returns their Mercury life expectancy back to them.`, () => {
+    let planet = new Planet('Mercury', .24, 10, 85);
+    expect(planet.lifeExpectancy()).toBeCloseTo(312.5);
+  });
 
-  // test(`If user's life expectancy is less than 5 years on Mercury, a special message should be displayed`, () => {
-  //   expect(mercury.lifeExpectancy(80, 85)).toEqual(`Time's almost up! You have ${mercuryLifeExpectancy} years left on Mercury!`); 
-  // });
   // test(`If a user's life expectancy is greater than their age on Mercury, return a special message`, () => {
   //   expect(mercury.lifeExpectancy(90, 85)).toBeCloseTo()
   // });
