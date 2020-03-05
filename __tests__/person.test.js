@@ -12,5 +12,9 @@ describe('Person', () => {
     let person = new Person('Josephine', 45);
     expect(person.age).toEqual(45);
   });
+  test(`Should have a "gender" property that returns either "male", "female", or "other"`, () => {
+    let person = new Person('Jojo', 15, 'female');
+    expect(person.gender).toEqual('female');
+  });
 
 });
