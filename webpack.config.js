@@ -14,6 +14,7 @@ module.exports = {
   devServer: {
     contentBase: './dist'
   },
+  setupFilesAfterEnv: ['./jest.setup.js'],
   plugins: [
     new UglifyJsPlugin({ sourceMap: true }),
     new CleanWebpackPlugin(),
