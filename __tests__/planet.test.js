@@ -1,4 +1,3 @@
-/* eslint-disable no-undef */
 import { Planet } from './../src/planet';
 
 describe('Planet', () => {
@@ -23,11 +22,9 @@ describe('Planet', () => {
     expect(planet.lifeExpectancy()).toBeCloseTo(312.5);
   });
 
-  // test(`If a user's life expectancy is greater than their age on Mercury, return a special message`, () => {
-  //   expect(mercury.lifeExpectancy(90, 85)).toBeCloseTo()
-  // });
-  // test(`If a user's life expectancy is greater than their age on Mercury, return their Mercy life expectancy as a positive number`, () => {
-  //   expect(mercury.lifeExpectancy(90, 85)).toBeCloseTo(20.83);
-  // });
+  test(`If a user's life expectancy is greater than their age on Mercury, return a special message`, () => {
+    let planet = new Planet('Mercury', .24, 90, 85);
+    expect(planet.lifeExpectancy()).toEqual(`Congrats! You beat father time! You've lived 20.83 extra years left on Mercury!`)
+  });
  
 });
