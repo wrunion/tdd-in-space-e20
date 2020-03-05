@@ -16,5 +16,9 @@ describe('Person', () => {
     let person = new Person('Jojo', 15, 'female');
     expect(person.gender).toEqual('female');
   });
+  test(`Should have an earthLifeExpectancy() function that returns a value based on gender value`, () => {
+    let person = new Person('Chris', 45, 'other');
+    expect(person.earthLifeExpectancy()).toEqual(72.0);
+  });
 
 });
