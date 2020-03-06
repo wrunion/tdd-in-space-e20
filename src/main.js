@@ -1,9 +1,6 @@
 import { Person } from './person';
-// import { Planet } from './planet';
-import './styles.css';
 import { Planet } from './planet';
-
-// let planets = [];
+import './styles.css';
 
 /* Globally available reference variable */ 
 const planetPercentages = {
