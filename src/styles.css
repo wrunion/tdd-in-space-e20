@@ -4,11 +4,12 @@ body, #header, #name, #userAge, #gender, #submitButton {
 
 #header {
   text-align: center;
+  padding-top: 1.5em;
 }
 
-/* 
-font-family: 'Quicksand', sans-serif;
-font-family: 'Lora', serif; */
+#content {
+  margin-top: 10%;
+}
 
 
 form {
