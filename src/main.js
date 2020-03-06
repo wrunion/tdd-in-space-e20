@@ -1,14 +1,13 @@
 import { Person } from './person';
-import { Years } from './years';
-import $ from jQuery;
+import { Planet } from './planet';
 import './styles.css';
 
-const planetPercentages = {
-  mercury: .24,
-  venus: .62,
-  mars: 1.88,
-  jupiter: 11.86
-}
+// const planetPercentages = {
+//   mercury: .24,
+//   venus: .62,
+//   mars: 1.88,
+//   jupiter: 11.86
+// }
 
 $(document).ready(function() {
 
