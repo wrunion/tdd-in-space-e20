@@ -14,7 +14,7 @@
   
   <title>Space Age</title>
 </head>
-<div class="ui container"> 
+<div class="ui container grid-container" id="main"> 
 <body>
   <div class="ui segment" id="content">
   <h1 class="ui header" id="header">
@@ -22,8 +22,10 @@
     <div class="sub header">Input your age to see what age you are on different planets!</div>
   </h1>
 <!-- <div class="ui segment"> -->
-<div class="ui form container">
+<div class="ui form container" id="form-container">
   <form>
+    <!-- User information  -->
+    <div class="hideOnSubmit" id="id-section">
     <h4 class="ui dividing header blue" id="header1">About You:</h4>
     <div class="three fields">
       <div class="field">
@@ -43,6 +45,16 @@
           </select>
       </div>
     </div>
+  </div>
+
+  <div class="showOnSubmit hideStart" id="results-div">
+    <h4 class="ui dividing header blue" id="header1">Your Space Age:</h4>
+    <div class="four fields">
+    </div>
+  </div>
+  
+
+  <!-- User choses planet which generates a new planet object, and displays the results above -->
     <h4 class="ui dividing header blue">Pick a Planet:</h4>
     <div class="inline fields">
       <div class="field">
@@ -70,32 +82,6 @@
         </div>
       </div>
     </div>
-    <!-- <div class="fields">
-      <div class="field">
-        <div class="ui checkbox">
-          <input type="checkbox" name="planets" value="mercury">
-          <label>Mercury</label>
-        </div>
-      </div>
-      <div class="field">
-        <div class="ui checkbox">
-          <input type="checkbox" name="planets" value="venus">
-          <label>Venus</label>
-        </div>
-      </div>
-      <div class="field">
-        <div class="ui checkbox">
-          <input type="checkbox" name="planets" value="mars">
-          <label>Mars</label>
-        </div>
-      </div>
-      <div class="field">
-        <div class="ui checkbox">
-          <input type="checkbox" name="planets" value="jupiter">
-          <label>Jupiter</label>
-        </div>
-      </div>
-    </div> -->
     <button type="submit" id="submitButton" class="ui fluid button blue">Show my age in space years!</button>
   </form>
 </div>
