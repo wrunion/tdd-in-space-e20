@@ -26,3 +26,7 @@ form {
 #submitButton {
   margin-top: 1em;
 }
+
+.hideStart {
+  display: none;
+}
