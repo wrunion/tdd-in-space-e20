@@ -27,10 +27,14 @@ $(document).ready(function() {
     const checkedPlanetPercentage = planetPercentages[checkedPlanet];
     const planet = new Planet(checkedPlanet, checkedPlanetPercentage, userAge, earthLifeExpectancy);
 
-    console.log(planet.calculateAge());
-    console.log(user);
-    console.log(earthLifeExpectancy);
-    console.log(planet);
+    /* Uppercase the planet name for display */
+    const planetDisplayName = checkedPlanet.replace(/^\w/, c => c.toUpperCase());
+
+    /* Return the calculated data back to the user */
+    $("#id-section").hide();
+    $("#results-div").append(`<div class="field">You are <strong>${planet.calculateAge()}</strong> years old on ${planetDisplayName}! 
+    </div>`);
+    $("#results-div").show(); 
     event.preventDefault();
   });
 
