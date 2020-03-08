@@ -12,6 +12,7 @@ _This app lets you enter your age and the name of a planet to see how old you ar
 * Git clone or download this repository.
 * Run NPM install to install all dependencies
 * Deploy and run it from your local server!
+* Alternatively, view the app [here](https://wrunion.github.io/tdd-in-space-e20/)
 
 ### Specs
 | Spec | Input | Output |
