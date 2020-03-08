@@ -1,3 +1,0 @@
-"jest": {
-  "setupFilesAfterEnv": ["jest-extended"]
-}

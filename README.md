@@ -1,33 +1,33 @@
 # Space Age
 
-###### Epicodus independent project, 3.5.2020
+#### Epicodus Independent Project, 3.5.2020
 
-###### By **Winter A. Runion**
+#### By **Winter A. Runion**
 
 ### Description
-_An exercise in Jest unit testing. This app lets you enter your age and the name of a planet to see how old you are on that planet!_ 
+_This app lets you enter your age and the name of a planet to see how old you are on that planet! Built to practice bundling with webpack and Jest unit testing._ 
 
 ### Instructions
 
-* View the app [here]().
-* Other
-* Instructions
-* Here
+* Git clone or download this repository.
+* Run NPM install to install all dependencies
+* Deploy and run it from your local server!
 
 ### Specs
 | Spec | Input | Output |
 | :-------------     | :------------- | :------------- |
-| **Spec Description**  | User Input: | Output: |
-| **Spec Description**  | User Input: | Output: |
-| **Spec Description**  | User Input: | Output: |
-| **Spec Description**  | User Input: | Output: |
-| **Spec Description**  | User Input: | Output: |
-| **Spec Description**  | User Input: | Output: |
+| **Should take a user's age, and return their age on a given planet**  | User Input: Age: 10, Planet: Mercury | Output: 41.67 |
+| **Should determine the life expectancy of a user, based on demographic data**  | User Input: Gender: female | Output: 72 |
+| **Should calculate life expectancy on a chosen planet**  | User Input: Age: 25 Planet: Jupiter | Output: 75.81 |
+| **If user has surpassed planetary life expectancy, return a special message instead**  | User Input: Age: 95, Planet: Mars | Output: Congrats! You beat father time! You've lived 12.24 years longer than expected on Mars! 
 
-### Technologies Used
-* List
-* Them
-* Here
+### Other Project Requirements: 
+1. Business logic is thoroughly tested with Jest.
+2. Each spec was committed before writing its corresponding code.
+3. Project utilizes ES6 features including classes, let and const.
+4. Dependencies are managed with npm.
+5. Webpack is used to lint, bundle, and process code.
+
 
 ### Known Bugs
 * None known at this time.
