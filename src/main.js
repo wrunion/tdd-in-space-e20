@@ -37,8 +37,9 @@ $(document).ready(function() {
 
       /* Return the calculated data back to the user */
       $("#id-section").hide();
-      $("#results-div").append(`<div class="field results-text">You are <strong>${planet.calculateAge()}</strong> years old on ${planetDisplayName}! 
-    </div>`);
+      $("#results-div").append(`<div class="field results-text">You are <strong>${planet.calculateAge()}</strong> years old on ${planetDisplayName}!
+      </div>`);
+
       $("#results-div").show(); 
     }
 
