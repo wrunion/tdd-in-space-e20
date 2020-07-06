@@ -5,14 +5,14 @@
 #### By **Winter A. Runion**
 
 ### Description
-_This app lets you enter your age and the name of a planet to see how old you are on that planet! Built to practice bundling with webpack and Jest unit testing._ 
+_Lets users enter their age and the name of a planet to see how "old" they are on that planet. Built to practice bundling with webpack and Jest unit testing._ 
 
-### Instructions
+### Demo
+App can be viewed at [wrunion.github.io/tdd-in-space-e20](https://wrunion.github.io/tdd-in-space-e20/)
+<p align="center">
+<img src="space-age.gif" alt="demo of a form with fields for name, age, and gender. when submitted, it returns the string, 'You are 2.77 years old on Jupiter.'" />  
+</p>
 
-* Git clone or download this repository.
-* Run NPM install to install all dependencies
-* Deploy and run it from your local server!
-* Alternatively, view the app [here](https://wrunion.github.io/tdd-in-space-e20/)
 
 ### Specs
 | Spec | Input | Output |
@@ -22,20 +22,16 @@ _This app lets you enter your age and the name of a planet to see how old you ar
 | **Should calculate life expectancy on a chosen planet**  | User Input: Age: 25 Planet: Jupiter | Output: 75.81 |
 | **If user has surpassed planetary life expectancy, return a special message instead**  | User Input: Age: 95, Planet: Mars | Output: Congrats! You beat father time! You've lived 12.24 years longer than expected on Mars! 
 
-### Other Project Requirements: 
-1. Business logic is thoroughly tested with Jest.
-2. Each spec was committed before writing its corresponding code.
-3. Project utilizes ES6 features including classes, let and const.
-4. Dependencies are managed with npm.
-5. Webpack is used to lint, bundle, and process code.
-
-
-### Known Bugs
-* None known at this time.
+### Project Requirements: 
+- [x] Business logic is thoroughly tested with Jest.
+- [x] Each spec was committed before writing its corresponding code.
+- [x] Project utilizes ES6 features including classes, let and const.
+- [x] Dependencies are managed with npm.
+- [x] Webpack is used to lint, bundle, and process code.
 
 ### Contact
 
-Contact me if you have questions or comments at winterrunion@gmail.com
+You're welcome to submit a pull request if you find any issues. You can reach me at winter@winterrunion.com.
 
 ### License
 _This software is licensed under the MIT license._
