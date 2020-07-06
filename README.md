@@ -7,12 +7,12 @@
 ### Description
 _Lets users enter their age and the name of a planet to see how "old" they are on that planet. Built to practice bundling with webpack and Jest unit testing._ 
 
-### Demo
-App can be viewed at [wrunion.github.io/tdd-in-space-e20](https://wrunion.github.io/tdd-in-space-e20/)
 <p align="center">
 <img src="space-age.gif" alt="demo of a form with fields for name, age, and gender. when submitted, it returns the string, 'You are 2.77 years old on Jupiter.'" />  
 </p>
 
+### Demo
+App can be viewed at [wrunion.github.io/tdd-in-space-e20](https://wrunion.github.io/tdd-in-space-e20/)
 
 ### Specs
 | Spec | Input | Output |
